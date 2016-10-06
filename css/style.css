@@ -1,3 +1,4 @@
+/*---| Variablen |---*/
 .dunkelrot { background-color: #8b2738; }
 .rot { background-color: #dd0420; }
 .magenta { background-color: #c7007f; }
@@ -8,8 +9,13 @@
 .dunkelgruen { background-color: #00847d; }
 .hellgruen { background-color: #76b828; }
 .gruen { background-color: #00a983; }
+
+/*---| Header |---*/
 .farbband {
   float: left;
   height: 25px;
   width: 10%;
 }
+
+/*---| Main |---*/
+/*---| Footer |---*/
