@@ -5,6 +5,13 @@ body {
   font: 14px/1.4 Lato, Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
 }
+/*---| Utilities |---*/
+.clear:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
 /*---| Header |---*/
 .farbband {
   float: left;
