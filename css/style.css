@@ -58,10 +58,34 @@ section {
   height: 50px;
   margin-top: -50px;
 }
-.divider.fg-hellgruen polygon {
-  fill: #76b828;
+.divider.fg-dunkelrot polygon {
+  fill: #8b2738;
+}
+.divider.fg-rot polygon {
+  fill: #dd0420;
+}
+.divider.fg-magenta polygon {
+  fill: #c7007f;
+}
+.divider.fg-hellviolett polygon {
+  fill: #996699;
 }
 .divider.fg-violett polygon {
   fill: #5b2282;
+}
+.divider.fg-blau polygon {
+  fill: #006eb7;
+}
+.divider.fg-hellblau polygon {
+  fill: #10bae7;
+}
+.divider.fg-dunkelgruen polygon {
+  fill: #00847d;
+}
+.divider.fg-hellgruen polygon {
+  fill: #76b828;
+}
+.divider.fg-gruen polygon {
+  fill: #00a983;
 }
 /*---| Footer |---*/
