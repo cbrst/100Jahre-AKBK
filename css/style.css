@@ -50,12 +50,13 @@ body {
 }
 /*---| Main |---*/
 section {
-  min-height: 100px;
+  padding-bottom: 50px;
 }
 .divider {
   display: block;
   width: 100%;
   height: 50px;
+  margin-top: -50px;
 }
 .divider.fg-hellgruen polygon {
   fill: #76b828;
