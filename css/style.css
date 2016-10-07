@@ -1,21 +1,39 @@
 /*---| Variablen |---*/
-.dunkelrot { background-color: #8b2738; }
-.rot { background-color: #dd0420; }
-.magenta { background-color: #c7007f; }
-.hellviolett { background-color: #996699; }
-.violett { background-color: #5b2282; }
-.blau { background-color: #006eb7; }
-.hellblau { background-color: #10bae7; }
-.dunkelgruen { background-color: #00847d; }
-.hellgruen { background-color: #76b828; }
-.gruen { background-color: #00a983; }
-
 /*---| Header |---*/
 .farbband {
   float: left;
   height: 25px;
   width: 10%;
 }
-
+.dunkelrot {
+  background-color: #8b2738;
+}
+.rot {
+  background-color: #dd0420;
+}
+.magenta {
+  background-color: #c7007f;
+}
+.hellviolett {
+  background-color: #996699;
+}
+.violett {
+  background-color: #5b2282;
+}
+.blau {
+  background-color: #006eb7;
+}
+.hellblau {
+  background-color: #10bae7;
+}
+.dunkelgruen {
+  background-color: #00847d;
+}
+.hellgruen {
+  background-color: #76b828;
+}
+.gruen {
+  background-color: #00a983;
+}
 /*---| Main |---*/
 /*---| Footer |---*/
