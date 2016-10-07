@@ -42,4 +42,18 @@ body {
   background-color: #00a983;
 }
 /*---| Main |---*/
+section {
+  min-height: 100px;
+}
+.divider {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+.divider.fg-hellgruen polygon {
+  fill: #76b828;
+}
+.divider.fg-violett polygon {
+  fill: #5b2282;
+}
 /*---| Footer |---*/
