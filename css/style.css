@@ -1,4 +1,10 @@
 /*---| Variablen |---*/
+/*---| Global |---*/
+body {
+  color: #666666;
+  font: 14px/1.4 Lato, Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
 /*---| Header |---*/
 .farbband {
   float: left;
