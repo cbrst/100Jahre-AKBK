@@ -48,6 +48,14 @@ body {
 .gruen {
   background-color: #00a983;
 }
+.navbar {
+  height: 60px;
+}
+.navbar img {
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
 /*---| Main |---*/
 section {
   padding-bottom: 50px;
