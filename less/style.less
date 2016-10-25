@@ -1,3 +1,4 @@
+// out: ../css/style.css, compress: false, strictMath: true
 // -*- less-css-compile-at-save: t; less-css-output-directory: "../css" -*-
 
 /*---| Variablen |---*/
@@ -12,6 +13,7 @@
 @dunkelgruen: #00847d;
 @hellgruen:   #76b828;
 @gruen:       #00a983;
+@grau:        #999797;
 
 @divider_height: 50px;
 
@@ -28,6 +30,28 @@ body {
   display: table;
   width: 100%;
   clear: both;
+}
+
+button {
+  background: @grau;
+  border: none;
+  display: inline-block;
+  font-size: 1.4em;
+  line-height: 2em;
+  height: 2em;
+  margin: 0;
+  padding: 0 1em 0 0;
+  
+  &:before {
+    background: @fg url('../img/scroll-down_gray.svg') center no-repeat;
+    background-size: 80%;
+    content: '';
+    display: inline-block;
+    height: 2em;
+    margin-right: 1em;
+    vertical-align: top;
+    width: 2em;
+  }
 }
 
 /*---| Header |---*/
