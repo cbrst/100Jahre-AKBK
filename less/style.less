@@ -41,7 +41,7 @@ button {
   height: 2em;
   margin: 0;
   padding: 0 1em 0 0;
-  
+
   &:before {
     background: @fg url('../img/scroll-down_gray.svg') center no-repeat;
     background-size: 80%;
@@ -118,18 +118,25 @@ section {
 
 footer {
   line-height: 3em;
-  
+
+	a:not(:active):not(:hover) {
+		color: @fg;
+	}
+
   span, nav, li {
     display: inline-block;
   }
+
   nav {
     float: right;
   }
+
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   li + li {
     margin-left: 1em;
   }
