@@ -14,6 +14,7 @@
 @hellgruen:   #76b828;
 @gruen:       #00a983;
 @grau:        #999797;
+@hellgrau:    #ececec;
 @weiss:       #ffffff;
 
 @divider_height: 50px;
@@ -73,6 +74,7 @@ button {
 .dunkelgruen { background-color: @dunkelgruen; }
 .hellgruen { background-color: @hellgruen; }
 .gruen { background-color: @gruen; }
+.hellgrau { background-color: @hellgrau; }
 .weiss { background-color: @weiss; }
 
 .navbar {
@@ -134,8 +136,20 @@ section {
   &.fg-dunkelgruen polygon { fill: @dunkelgruen; }
   &.fg-hellgruen polygon   { fill: @hellgruen; }
   &.fg-gruen polygon       { fill: @gruen; }
-  &.fg-grau polygon        { fill: @grau; }
-  &.fg-grau polygon        { fill: @weiss; }
+  &.fg-hellgrau polygon        { fill: @hellgrau; }
+  &.fg-weiss polygon       { fill: @weiss; }
+}
+
+.divider-bottom {
+  margin-top: 0;
+  margin-bottom: -@divider_height;
+}
+
+.section--hero-image {
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 350px;
 }
 
 /*---| Footer |---*/
