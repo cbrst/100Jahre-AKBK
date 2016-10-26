@@ -96,7 +96,7 @@ button.button--link:before {
 /*---| Slider |---*/
 .title-screen {
   height: calc(100vh - 85px);
-  padding-bottom: 0;
+  padding: 0;
 }
 .title-screen .bx-viewport,
 .title-screen .bx-wrapper {
@@ -122,7 +122,7 @@ button.button--link:before {
 }
 /*---| Main |---*/
 section {
-  padding-bottom: 50px;
+  padding: calc(150px) 0;
 }
 .divider {
   display: block;
