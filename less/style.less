@@ -23,7 +23,7 @@
 /*---| Global |---*/
 body {
   color: @fg;
-  font: 14px/1.4 Lato, Helvetica, Arial, sans-serif;
+  font: 18px/1.4 Lato, Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -60,7 +60,7 @@ button {
   }
 
   &.button--download:before {
-    background: @fg url('../img/icon-download.svg') center no-repeat;
+    background: @fg url('../img/scroll-down_gray.svg') center no-repeat;
   }
 
   &.button--link:before {
@@ -104,11 +104,13 @@ button {
 /*---| Slider |---*/
 .title-screen {
   height: calc(~"100vh - 85px");
+  padding: 0;
 
   .bx-viewport, .bx-wrapper{
     border: none;
     width:100%;
     height:100% !important;
+    box-shadow: none;
   }
 
   .slider-main {
@@ -124,12 +126,16 @@ button {
       background-image: url('http://placehold.it/1920x1080');
     }
   }
+
+  & + .divider {
+    position: relative;
+  }
 }
 
 /*---| Main |---*/
 
 section {
-  padding-bottom: @divider_height;
+  padding: calc(@divider_height * 3) 0;
 }
 
 .divider {

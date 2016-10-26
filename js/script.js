@@ -1,3 +1,5 @@
 $(document).ready(function() {
-  $('.slider-main').bxSlider();
+  $('.slider-main').bxSlider({
+		pager: false,
+	});
 });
