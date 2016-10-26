@@ -120,6 +120,19 @@ button.button--link:before {
 .title-screen + .divider {
   position: relative;
 }
+.title-screen .bx-controls {
+  position: relative;
+  top: -50vh;
+}
+.title-screen .bx-controls a {
+  background: url('../img/scroll-down_gray.svg') center no-repeat;
+}
+.title-screen .bx-controls .bx-prev {
+  transform: rotate(90deg);
+}
+.title-screen .bx-controls .bx-next {
+  transform: rotate(-90deg);
+}
 /*---| Main |---*/
 section {
   padding: calc(150px) 0;
