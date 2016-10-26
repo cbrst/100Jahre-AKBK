@@ -1,64 +1,293 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Schulte ist...</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato|PT+Serif|Roboto+Condensed" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/jquery.bxslider.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="css/style.css" rel="stylesheet">
+  <title>100 Jahre AKBK Jubiläum</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|PT+Serif|Roboto+Condensed" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/jquery.bxslider.css" rel="stylesheet">
 
-    <link rel="icon" type="img/x-icon" href="img/favicons/favicon.ico" />
-    <link rel="shortcut icon" href="img/favicons/favicon.png" />
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png" />
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-57x57.png" sizes="57x57" />
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-72x72.png" sizes="72x72" />
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-76x76.png" sizes="76x76" />
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-114x114.png" sizes="114x114" />
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-144x144.png" sizes="144x144" />
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-152x152.png" sizes="152x152" />
-  </head>
+  <link href="less/style.less" rel="stylesheet/less" type="text/css">
 
-  <body>
-    <header class="clear">
-      <div class="farbband dunkelrot"></div>
-      <div class="farbband rot"></div>
-      <div class="farbband magenta"></div>
-      <div class="farbband hellviolett"></div>
-      <div class="farbband violett"></div>
-      <div class="farbband blau"></div>
-      <div class="farbband hellblau"></div>
-      <div class="farbband dunkelgruen"></div>
-      <div class="farbband hellgruen"></div>
-      <div class="farbband gruen"></div>
-    </header>
+  <link rel="icon" type="img/x-icon" href="img/favicons/favicon.ico" />
+  <link rel="shortcut icon" href="img/favicons/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png" />
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-57x57.png" sizes="57x57" />
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-72x72.png" sizes="72x72" />
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-76x76.png" sizes="76x76" />
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-114x114.png" sizes="114x114" />
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-144x144.png" sizes="144x144" />
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-152x152.png" sizes="152x152" />
 
-    <main>
-      <section class="blau">
-      </section>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-      <svg class="divider fg-hellgruen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
-        <polygon points="100,0 100,10 0,10" />
-      </svg>
+<body>
+  <header class="clear">
+    <div class="farbband dunkelrot"></div>
+    <div class="farbband rot"></div>
+    <div class="farbband magenta"></div>
+    <div class="farbband hellviolett"></div>
+    <div class="farbband violett"></div>
+    <div class="farbband blau"></div>
+    <div class="farbband hellblau"></div>
+    <div class="farbband dunkelgruen"></div>
+    <div class="farbband hellgruen"></div>
+    <div class="farbband gruen"></div>
 
-      <section class="hellgruen">
-      </section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 navbar">
+          <img src="img/100-logo.svg" title="100 Jahre AKBK" alt="100 Jahre" />
+          <img src="img/akbk-logo.svg" title="Adolph-Kolping-Berufskolleg Münster" alt="Adolph-Kolping-Berufskolleg Münster" />
+        </div>
+      </div>
+    </div>
+  </header>
 
-      <svg class="divider fg-violett" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
-        <polygon points="0,0 0,10 100,10" />
-      </svg>
+  <main>
+    <section class="title-screen">
+      <ul class="slider-main">
+        <li id="slide01">
+          <span class="pre-button">&nbsp;</span>
+          <h1>Feier 100 Jahre Adolph-Kolping-Berufskolleg</h1>
+          <h2>Werde Teil der Geschichte</h2>
+          <button>Test</button>
+          <span class="next-button">&nbsp;</span>
+          <span class="scroll-down">
+            <img src="img/scroll-down-icon.svg" alt=""/>
+          </span>
+        </li>
+        <li id="slide02">Was Rein</li>
+        <li id="slide03">Noch was</li>
+      </ul>
+    </section>
 
-      <section class="violett">
-      </section>
-    </main>
+    <section class="weiss section--icon-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <img class="icon" src="img/clock.svg">
+            100 Jahre <br>
+            voller Veränderung
+          </div>
+          <div class="col-xs-4">
+            <img class="icon" src="img/work.svg">
+            100 Jahre<br>
+            berufsnah
+          </div>
+          <div class="col-xs-4">
+            <img class="icon" src="img/nrw.svg">
+            100 Jahre<br>
+            daheim in NRW
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer></footer>
+    <svg class="divider fg-hellgrau" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+      <polygon points="100,0 100,10 0,10" />
+    </svg>
 
-    <!-- Abandon all hope, ye who enter here. -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
-  </body>
+    <section class="hellgrau">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-4">
+            <h3>Wir laden ein...</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-7 col-xs-offset-5">
+            <p>
+              ... zur <strong>Präsentation, Workshop und Ausstellungen</strong><br>
+              der Abteilungen und Bereiche.
+            </p>
+            <p>
+              am Freitag, 04. November 2016 von 13:00 Uhr - 18:00 Uhr und <br>
+              am Samstag, 05. November 2016 von 10:00 Uhr - 17:00 Uhr
+            </p>
+            <p>
+              im Gebäude I und II des Adolph-Kolping-Berufskolleg
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider divider-bottom fg-hellgrau" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+      <polygon points="0,0 100,0 100,10" />
+    </svg>
+
+    <section class="section--hero-image">
+    </section>
+
+    <svg class="divider fg-weiss" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+      <polygon points="100,0 100,10 0,10" />
+    </svg>
+
+    <section class="weiss section--quote">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1">
+            <img src="img/quote.svg">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-7 col-xs-offset-1">
+            ,jsd,jasedgfjliu
+            <span class="author">Name</span>
+          </div>
+          <div class="col-xs-4">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider divider-bottom fg-weiss" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+        <polygon points="0,0 100,0 100,10" />
+    </svg>
+
+    <section class="grau section--text-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            Besuchen Sie uns am 4. November 2016
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider divider-bottom fg-grau" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+        <polygon points="0,0 100,0 100,10" />
+    </svg>
+
+    <section class="hellgrau section--text-video">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Eine Schule mit Geschichte</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-xs-offset-1">
+            Das Adolph-Kolping-Berufskolleg Münster feiert 2016 den 100. Geburtstag! Wir sind stolz auf unser Jubiläum.<br>
+            Die Geschichte unseres Berufskollegs ist lang und bewegt. Sie wird an dieser Stelle in Episoden dargestellt und in die Moderne transportiert.<br>
+            Erfahren Sie mehr über die traditionsreiche Berufsschule in Münster.
+          </div>
+          <div class="col-xs-4 col-xs-offset-1">
+            <iframe src="https://www.youtube.com/embed/uXbITLt6B0A" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider fg-weiss" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+      <polygon points="100,0 100,10 0,10" />
+    </svg>
+
+    <section class="weiss section--bx-slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Asuzeichnungen, Programme und Partner</h3>
+          </div>
+        </div>
+        <div class="row">
+
+        </div>
+      </div>
+    </section>
+
+    <svg class="divider divider-bottom fg-weiss" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+      <polygon points="0,0 100,0 100,10" />
+    </svg>
+
+    <section class="section--hero-text-image">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-5 col-xs-offset-3">
+            Ein Teil der Stadtgeschichte feiert.<br>
+            Feiern Sie mit.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--faecher">
+      <div class="container">
+         <div class="row">
+          <div class="col-xs-8 col-xs-offset-4">
+            <h3>Jubiläumsfächer</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-7 col-xs-offset-5">
+            <p>
+              Sichern Sie sich jetzt Ihren Jubiläumsfächer
+            </p>
+            <ul>
+              <li>Stichpunkt 1</li>
+              <li>Stichpunkt 2</li>
+              <li>Stichpunkt 3</li>
+            </ul>
+            <button class="button button--download">hier kostenlos herrunterladen</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--bildmatrix">
+      <img src="">
+      <img src="">
+    </section>
+
+    <section class="section--schullink">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-7 col-xs-offset-5">
+            Besuchen Sie das
+            <img src="img/akbk-logo.svg" title="Adolph-Kolping-Berufskolleg" class="logo">
+            <button class="button button--hell button--link">zur Schulwebseite</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <span class="copyright">&copy; 2016 Adolph-Kolping-Berufskolleg</span>
+        </div>
+        <div class="col-md-6">
+          <nav class="footer_nav">
+            <ul>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Impressum</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Abandon all hope, ye who enter here. -->
+  <script src="js/jquery-1.8.2.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+
+  <script src="js/script.js"></script>
+
+  <script src="js/less.min.js"></script>
+</body>
 </html>
