@@ -206,6 +206,9 @@ section {
   background-size: cover;
   min-height: 550px;
 }
+.hero-text	{
+	color:#ffffff;
+}
 /*---| Footer |---*/
 footer {
   line-height: 3em;
