@@ -48,7 +48,7 @@ button {
   .button--hell {
     background: @hellgrau;
   }
-    
+
   &:before {
     background-size: 80%;
     content: '';
@@ -62,9 +62,9 @@ button {
   &.button--download:before {
     background: @fg url('../img/icon-download.svg') center no-repeat;
   }
-  
+
   &.button--link:before {
-    background: @fg url('../img/icon-link.svg') center no-repeat;      
+    background: @fg url('../img/icon-link.svg') center no-repeat;
   }
 
 }
@@ -124,7 +124,7 @@ button {
       background-image: url('http://placehold.it/1920x1080');
     }
   }
-} 
+}
 
 /*---| Main |---*/
 
@@ -188,17 +188,24 @@ section {
 footer {
   line-height: 3em;
 
+	a:not(:active):not(:hover) {
+		color: @fg;
+	}
+
   span, nav, li {
     display: inline-block;
   }
+
   nav {
     float: right;
   }
+
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   li + li {
     margin-left: 1em;
   }
