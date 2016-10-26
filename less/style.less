@@ -104,11 +104,13 @@ button {
 /*---| Slider |---*/
 .title-screen {
   height: calc(~"100vh - 85px");
+  padding-bottom: 0;
 
   .bx-viewport, .bx-wrapper{
     border: none;
     width:100%;
     height:100% !important;
+    box-shadow: none;
   }
 
   .slider-main {
@@ -123,6 +125,10 @@ button {
       background-size: cover;
       background-image: url('http://placehold.it/1920x1080');
     }
+  }
+
+  & + .divider {
+    position: relative;
   }
 }
 
