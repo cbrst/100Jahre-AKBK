@@ -2,7 +2,6 @@
 // -*- less-css-compile-at-save: t; less-css-output-directory: "../css" -*-
 
 /*---| Variablen |---*/
-@fg:          #666666;
 @dunkelrot:   #8b2738;
 @rot:         #dd0420;
 @magenta:     #c7007f;
@@ -17,6 +16,7 @@
 @hellesgrau:  #d9d2d0;
 @hellgrau:    #ececec;
 @weiss:       #ffffff;
+@fg:          @grau;
 
 @divider_height: 50px;
 
@@ -69,7 +69,7 @@ button {
   }
 
   &.button--link:before {
-    background: @fg url('../img/scroll-down_gray.svg') center no-repeat;
+    background: @fg url('../img/icon-arrow-weiss.svg') center no-repeat;
     background-size: 35px 35px;
     transform: rotate(-90deg);
   }
@@ -97,6 +97,8 @@ button {
 .hellgrau { background-color: @hellgrau; }
 .grau { background-color: @grau; }
 .weiss { background-color: @weiss; }
+
+.color--weiss { color: @weiss; }
 
 .navbar {
   height: 90px;
@@ -148,7 +150,7 @@ button {
     top: -50vh;
 
     a {
-      background: url('../img/scroll-down_gray.svg') center no-repeat;
+      background: url('../img/icon-arrow.svg') center no-repeat;
     }
 
     .bx-prev {

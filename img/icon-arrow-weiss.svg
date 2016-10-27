@@ -1,6 +1,6 @@
 <svg class="fg-grau" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.6 5.9">
   <style type="text/css">
-    .path{fill:#9a9997;}
+    .path{fill:#ececec;}
   </style>   
   <path class="path" d="M9.6,1.1L8.5,0L4.8,3.7L1.1,0L0,1.1l4.8,4.8L9.6,1.1z M9.6,1.1"/>
 </svg>
