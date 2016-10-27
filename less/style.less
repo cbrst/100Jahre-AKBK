@@ -27,6 +27,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.sepia {
+  filter: url(sepia.svg#sepia); /* Firefox 3.5+ */
+  filter: sepia(100%);
+  -webkit-filter: sepia(100%); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
 /*---| Utilities |---*/
 .clear:after {
   content: '';
