@@ -1,7 +1,9 @@
 $(document).ready(function() {
   $('.slider-main').bxSlider({
 		pager: false,
-        auto: true
+        auto: true,
+        nextText: '',
+        prevText: ''
   });
   $('.slider-partner').bxSlider({
 		pager: false,
