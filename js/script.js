@@ -12,18 +12,18 @@ $(document).ready(function () {
     moveSlides: 2,
     slideWidth: 200
   });
+  
   if (window.addEventListener) {
     var state = 0,
-      konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+      akbk = [65, 75, 66, 75];
     window.addEventListener("keydown", function (e) {
-      if (e.keyCode == konami[state]) state++;
+      if (e.keyCode == akbk[state]) state++;
       else state = 0;
-      if (state == 10)
-        alert('Robert stinkt!!!!');
-        
-        
+      if (state == 4)
+        alert('Test!');
         
         
     }, true);
   }
+  
 });
