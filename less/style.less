@@ -119,6 +119,7 @@ button {
 
 /*---| Slider |---*/
 .title-screen {
+  //position: relative;
   height: calc(~"100vh - 60px");
   padding: 0;
 
@@ -141,6 +142,7 @@ button {
       background-position: top center;
       background-size: cover;
       background-image: url('http://placehold.it/1920x1080');
+      text-align: center;
     }
   }
 
@@ -163,6 +165,17 @@ button {
     .bx-next {
       transform: rotate(-90deg);
     }
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    animation: fullwidth-header-bounce 2.2s ease-out infinite;
+    
+      img {
+        width: 55px;
+      }
   }
 }
 
@@ -258,4 +271,13 @@ footer {
 	.akbk-logo {
 		display:none;
 	}
+}
+
+
+@keyframes fullwidth-header-bounce {
+  0% { transform:translateY(0%); }
+  12.5% { transform:translateY(20%); }
+  25% { transform:translateY(0%); }
+  37.5% { transform:translateY(20%); }
+  50% { transform:translateY(0%); }
 }
