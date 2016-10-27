@@ -23,7 +23,7 @@
 /*---| Global |---*/
 body {
   color: @fg;
-  font: 14px/1.4 Lato, Helvetica, Arial, sans-serif;
+  font: 18px/1.4 Lato, Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -59,12 +59,19 @@ button {
     width: 2em;
   }
 
+  &.button--no-icon:before {
+    display: none;
+  }
+
   &.button--download:before {
-    background: @fg url('../img/scroll-down_gray.svg') center no-repeat;
+    background: @fg url('../img/icon-download.svg') center no-repeat;
+    background-size: 35px 35px;
   }
 
   &.button--link:before {
-    background: @fg url('../img/icon-link.svg') center no-repeat;
+    background: @fg url('../img/scroll-down_gray.svg') center no-repeat;
+    background-size: 35px 35px;
+    transform: rotate(-90deg);
   }
 
 }
@@ -92,7 +99,7 @@ button {
 .weiss { background-color: @weiss; }
 
 .navbar {
-  height: 60px;
+  height: 90px;
 
   & img {
     height: 40px;
@@ -103,12 +110,15 @@ button {
 
 /*---| Slider |---*/
 .title-screen {
-  height: calc(~"100vh - 85px");
+  height: calc(~"100vh - 35px");
+  padding: 0;
 
   .bx-viewport, .bx-wrapper{
     border: none;
     width:100%;
     height:100% !important;
+    box-shadow: none;
+    left: 0;
   }
 
   .slider-main {
@@ -124,12 +134,33 @@ button {
       background-image: url('http://placehold.it/1920x1080');
     }
   }
+
+  & + .divider {
+    position: relative;
+  }
+
+  .bx-controls {
+    position: relative;
+    top: -50vh;
+
+    a {
+      background: url('../img/scroll-down_gray.svg') center no-repeat;
+    }
+
+    .bx-prev {
+      transform: rotate(90deg);
+    }
+
+    .bx-next {
+      transform: rotate(-90deg);
+    }
+  }
 }
 
 /*---| Main |---*/
 
 section {
-  padding-bottom: @divider_height;
+  padding: calc(@divider_height * 3) 0;
 }
 
 .divider {
@@ -180,6 +211,10 @@ section {
   background: @grau url('../img/panorama.jpg') center no-repeat;
   background-size: cover;
   min-height: 550px;
+}
+
+.hero-text	{
+	color:#fff;
 }
 
 
