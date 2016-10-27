@@ -34,7 +34,7 @@ body {
 }
 
 /*---| Utilities |---*/
-.clear:after {
+.clear::after {
   content: '';
   display: table;
   width: 100%;
@@ -55,7 +55,7 @@ button {
     background: @hellgrau;
   }
 
-  &:before {
+  &::before {
     background-size: 80%;
     content: '';
     display: inline-block;
@@ -65,16 +65,20 @@ button {
     width: 2em;
   }
 
-  &.button--no-icon:before {
-    display: none;
+  &.button--no-icon{
+    padding: 0 1em;
+      
+    &::before {
+      display: none;
+    }
   }
 
-  &.button--download:before {
+  &.button--download::before {
     background: @fg url('../img/icon-download.svg') center no-repeat;
     background-size: 35px 35px;
   }
 
-  &.button--link:before {
+  &.button--link::before {
     background: @fg url('../img/icon-arrow-weiss.svg') center no-repeat;
     background-size: 35px 35px;
     transform: rotate(-90deg);
