@@ -17,6 +17,7 @@
 @hellgrau:    #ececec;
 @weiss:       #ffffff;
 @fg:          @grau;
+@fg_dunkel:   #444;
 
 @divider_height: 50px;
 
@@ -67,7 +68,7 @@ button {
 
   &.button--no-icon{
     padding: 0 1em;
-      
+
     &::before {
       display: none;
     }
@@ -83,7 +84,12 @@ button {
     background-size: 35px 35px;
     transform: rotate(-90deg);
   }
+}
 
+h1, h2, h3, h4, h5, h6 {
+  color: @fg_dunkel;
+  font-family: "PT Serif", Georgia, serif;
+  font-weight: normal;
 }
 
 /*---| Header |---*/
