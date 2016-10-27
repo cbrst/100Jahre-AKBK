@@ -1,15 +1,29 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $('.slider-main').bxSlider({
-		pager: false,
-        auto: true,
-        nextText: '',
-        prevText: ''
+    pager: false,
+    auto: true,
+    nextText: '',
+    prevText: ''
   });
   $('.slider-partner').bxSlider({
-		pager: false,
-        minSlides: 4,
-        maxSlides: 6,
-        moveSlides: 2,
-        slideWidth: 200
+    pager: false,
+    minSlides: 4,
+    maxSlides: 6,
+    moveSlides: 2,
+    slideWidth: 200
   });
+  if (window.addEventListener) {
+    var state = 0,
+      konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+    window.addEventListener("keydown", function (e) {
+      if (e.keyCode == konami[state]) state++;
+      else state = 0;
+      if (state == 10)
+        alert('Robert stinkt!!!!');
+        
+        
+        
+        
+    }, true);
+  }
 });
