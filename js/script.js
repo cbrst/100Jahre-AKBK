@@ -20,7 +20,7 @@ $(document).ready(function () {
       if (e.keyCode == akbk[state]) state++;
       else state = 0;
       if (state == 7)
-        $('body').addClass('sepia');
+        $('body').toggleClass('sepia');
     }, true);
   }
   
