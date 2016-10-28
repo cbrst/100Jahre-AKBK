@@ -16,7 +16,8 @@
 @hellesgrau:  #d9d2d0;
 @hellgrau:    #ececec;
 @weiss:       #ffffff;
-@fg:          @grau;
+@weiss_transparent:  rgba(255, 255, 255, .8);
+@fg:          #666;
 @fg_dunkel:   #444;
 
 @divider_height: 50px;
@@ -51,7 +52,7 @@ button {
   height: 2em;
   margin: 0;
   padding: 0 1em 0 0;
-
+    
   .button--hell {
     background: @hellgrau;
   }
@@ -90,6 +91,23 @@ h1, h2, h3, h4, h5, h6 {
   color: @fg_dunkel;
   font-family: "PT Serif", Georgia, serif;
   font-weight: normal;
+}
+
+h1,
+h2 {
+  display: inline-block;
+  background-color: @weiss_transparent;
+  margin-top: 15px; 
+  padding: 15px 20px;
+  position: relative;
+}
+
+h1 {
+  top: 5%;
+}
+
+h2 {
+  top: 5%;
 }
 
 /*---| Header |---*/
@@ -140,15 +158,16 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: none;
     left: 0;
   }
-    
-    .bx-wrapper, .bx-viewport {
-     height: 160px !important;
-}
 
   .slider-main {
     height: 100%;
     margin: 0;
 
+    button {
+      position: relative;
+      top: 5%;
+    }
+      
     li {
       height: 100% !important;
       width: 100vw !important;
