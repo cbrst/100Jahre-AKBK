@@ -47,11 +47,13 @@ a.button,
 button {
   background: @hellesgrau;
   border: none;
+  color: @fg;
   display: inline-block;
   font-size: 1.4em;
   line-height: 2em;
   height: 2em;
   margin: 0;
+  text-decoration: none;
   padding: 0 1em 0 0;
   text-decoration: none;
   color: @fg;
@@ -150,7 +152,6 @@ h2 {
 
 /*---| Slider |---*/
 .title-screen {
-  //position: relative;
   height: calc(~"100vh - 60px");
   padding: 0;
 
@@ -166,7 +167,7 @@ h2 {
     height: 100%;
     margin: 0;
 
-    button {
+    a.button {
       position: relative;
       top: 5%;
     }
