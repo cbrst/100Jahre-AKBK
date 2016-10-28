@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato|PT+Serif|Roboto+Condensed" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/jquery.bxslider.css" rel="stylesheet">
+  <link href="http://vjs.zencdn.net/5.11.9/video-js.css" rel="stylesheet">
 
   <link href="less/style.less" rel="stylesheet/less" type="text/css">
 
@@ -70,7 +71,7 @@
         <li id="slide02">
           <h1>Wir feiern 100 Jahre und jeder darf mitfeiern.</h1><br>
           <h2>Auch du!</h2><br>
-          <button class="button button--no-icon" href="#section--faecher">Jubiläumsfächer</button> 
+          <button class="button button--no-icon" href="#section--faecher">Jubiläumsfächer</button>
           <span class="scroll-down">
             <img src="img/scroll-down_gray.svg" alt=""/>
           </span>
@@ -81,7 +82,7 @@
           <button class="button button--no-icon" href="#section--faecher">Jubiläumsfächer</button>
           <span class="scroll-down">
             <img src="img/scroll-down_gray.svg" alt=""/>
-          </span>  
+          </span>
         </li>
       </ul>
     </section>
@@ -94,19 +95,13 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-4">
-            <img class="icon" src="img/icon-clock.svg">
-            100 Jahre <br>
-            voller Veränderung
+            <img class="icon" src="img/icon-clock.svg"> 100 Jahre <br> voller Veränderung
           </div>
           <div class="col-xs-4">
-            <img class="icon" src="img/icon-work.svg">
-            100 Jahre<br>
-            berufsnah
+            <img class="icon" src="img/icon-work.svg"> 100 Jahre<br> berufsnah
           </div>
           <div class="col-xs-4">
-            <img class="icon" src="img/icon-nrw.svg">
-            100 Jahre<br>
-            daheim in NRW
+            <img class="icon" src="img/icon-nrw.svg"> 100 Jahre<br> daheim in NRW
           </div>
         </div>
       </div>
@@ -126,12 +121,10 @@
         <div class="row">
           <div class="col-xs-7 col-xs-offset-5">
             <p>
-              ... zu <strong>Präsentationen, Workshops und Ausstellungen</strong><br>
-              der Abteilungen und Bereiche.
+              ... zu <strong>Präsentationen, Workshops und Ausstellungen</strong><br> der Abteilungen und Bereiche.
             </p>
             <p>
-              am Freitag, 04. November 2016 von 13:00 Uhr - 18:00 Uhr und <br>
-              am Samstag, 05. November 2016 von 10:00 Uhr - 17:00 Uhr
+              am Freitag, 04. November 2016 von 13:00 Uhr - 18:00 Uhr und <br> am Samstag, 05. November 2016 von 10:00 Uhr - 17:00 Uhr
             </p>
             <p>
               im Gebäude I und II des Adolph-Kolping-Berufskolleg
@@ -198,12 +191,18 @@
         </div>
         <div class="row">
           <div class="col-xs-6 col-xs-offset-1">
-            Das Adolph-Kolping-Berufskolleg Münster feiert 2016 den 100. Geburtstag! Wir sind stolz auf unser Jubiläum.<br>
-            Die Geschichte unseres Berufskollegs ist lang und bewegt. Sie wird an dieser Stelle in Episoden dargestellt und in die Moderne transportiert.<br>
-            Erfahren Sie mehr über die traditionsreiche Berufsschule in Münster.
+            Das Adolph-Kolping-Berufskolleg Münster feiert 2016 den 100. Geburtstag! Wir sind stolz auf unser Jubiläum.<br> Die Geschichte unseres Berufskollegs ist lang und bewegt. Sie wird an dieser Stelle in Episoden dargestellt und in die Moderne transportiert.<br> Erfahren Sie mehr über die traditionsreiche Berufsschule in Münster.
           </div>
           <div class="col-xs-4 col-xs-offset-1">
             <iframe src="https://www.youtube.com/embed/uXbITLt6B0A" frameborder="0" allowfullscreen></iframe>
+            <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+              <source src="MY_VIDEO.mp4" type='video/mp4'>
+              <source src="MY_VIDEO.webm" type='video/webm'>
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+              </p>
+            </video>
           </div>
         </div>
       </div>
@@ -248,8 +247,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-5 col-xs-offset-3">
-            <p class="hero-text">Ein Teil der Stadtgeschichte feiert.<br>
-            Feiern Sie mit.</p>
+            <p class="hero-text">Ein Teil der Stadtgeschichte feiert.<br> Feiern Sie mit.</p>
           </div>
         </div>
       </div>
@@ -261,7 +259,7 @@
 
     <section class="section--faecher" id="section--faecher">
       <div class="container">
-         <div class="row">
+        <div class="row">
           <div class="col-xs-8 col-xs-offset-4">
             <h3>Jubiläumsfächer</h3>
           </div>
@@ -284,7 +282,7 @@
 
     <svg class="divider divider-bottom fg-weiss" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
       <polygon points="0,-1 0,10 100,0 100,-1" />
-    </svg> 
+    </svg>
 
     <section class="section--bildmatrix">
       <img src="img/bildmatrix.jpg">
@@ -293,9 +291,9 @@
     <svg class="divider fg-weiss" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
       <polygon points="0,11 0,10 100,0 100,11" />
     </svg>
- 
- 
-      
+
+
+
     <section class="section--schullink">
       <div class="container">
         <div class="row">
@@ -330,9 +328,11 @@
   <!-- Abandon all hope, ye who enter here. -->
   <script src="js/jquery-1.8.2.min.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
+  <script src="http://vjs.zencdn.net/5.11.9/video.js"></script>
 
   <script src="js/script.js"></script>
 
   <script src="js/less.min.js"></script>
 </body>
+
 </html>
