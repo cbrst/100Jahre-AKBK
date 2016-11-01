@@ -102,7 +102,7 @@ h1,
 h2 {
   color: @weiss;
   display: inline-block;
-  margin-top: 15px; 
+  margin-top: 15px;
   padding: 15px 20px;
   position: relative;
 }
@@ -171,7 +171,7 @@ h2 {
       position: relative;
       top: 5%;
     }
-      
+
     li {
       height: 100% !important;
       width: 100vw !important;
@@ -234,7 +234,6 @@ h2 {
 }
 
 /*---| Main |---*/
-
 section {
   padding: calc(@divider_height * 3) 0;
 }
@@ -283,22 +282,27 @@ section {
   min-height: 350px;
 }
 
+.section--text-line {
+  padding: 0 !important;
+
+  p{
+    font-family: "PT Serif", Georgia, serif;
+    font-size:40px;
+    font-weight: normal;
+    padding-top:50px;
+  }
+}
+
 .section--hero-text-image {
   background: @grau url('../img/panorama.jpg') center no-repeat;
   background-size: cover;
   min-height: 550px;
+
+  p {
+    color: @weiss;
+  }
 }
 
-.hero-text	{
-	color:@weiss;
-}
-.datum {
-	font-size:40px;
-	padding-top:50px;
-}
-.section-datum {
-	padding: 0 !important;
-	}
 .section--bildmatrix{
     position: relative;
     padding: 0;
