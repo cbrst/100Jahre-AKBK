@@ -282,6 +282,37 @@ section {
   min-height: 350px;
 }
 
+.section--quote {
+  padding-bottom: 0;
+
+  p {
+    background: @weiss url('../img/icon-quotes.svg') left top no-repeat;
+    background-size: 50px;
+    padding-left: 70px;
+    padding-top: 20px;
+
+    span {
+      display: block;
+      margin-top: 15px;
+      text-align: right;
+
+      &::before,
+      &::after {
+        content: " ~ ";
+      }
+    }
+  }
+
+  img {
+    height: auto;
+    position: relative;
+    top: -100px;
+    width: 100%;
+  }
+
+
+}
+
 .section--text-line {
   padding: 0 !important;
 
@@ -342,6 +373,16 @@ footer {
     margin-left: 1em;
   }
 }
+
+@media screen and (max-width: 974px) {
+  .section--quote {
+    img {
+      margin-bottom: 20px;
+      top: 10px;
+    }
+  }
+}
+
 @media screen and (max-width: 452px) {
 	.akbk-logo {
 		display:none;
