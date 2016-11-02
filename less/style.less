@@ -337,9 +337,6 @@ section {
     &.fg-weiss polygon {
         fill: @weiss;
     }
-    &.fg-weiss-grau polygon {
-      fill: url(#grau-verlauf);
-    }
 }
 
 .divider-bottom {
@@ -512,7 +509,11 @@ section {
 }
 
 .section--schullink {
-  background-image: linear-gradient(to right, @weiss 0%, @grau 100%);
+  background-image: url('../img/schloss_menschen.jpg'), linear-gradient(to right, @weiss 0%, @grau 100%);
+  background-color: @hellgrau;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
 
   .logo {
     margin: 20px 0;
