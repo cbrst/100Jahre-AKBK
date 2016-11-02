@@ -10,7 +10,9 @@ $(document).ready(function () {
     minSlides: 4,
     maxSlides: 6,
     moveSlides: 2,
-    slideWidth: 200
+    slideWidth: 200,
+    auto: true,
+    pause: 2000
   });
 
   /**
