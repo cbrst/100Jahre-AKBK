@@ -31,9 +31,6 @@ Section Schullink
 - Hintergrundbild einfügen
 - Poligon Farbverlauf zuweisen
 
-Slider
-- Slide-Dauer verlängern
-
 Mobile-Styling
 - Schriftgröße optimieren
 

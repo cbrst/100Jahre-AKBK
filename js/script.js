@@ -3,7 +3,8 @@ $(document).ready(function () {
     pager: false,
     auto: true,
     nextText: '',
-    prevText: ''
+    prevText: '',
+    speed: 1500
   });
   $('.slider-partner').bxSlider({
     pager: false,
@@ -12,7 +13,8 @@ $(document).ready(function () {
     moveSlides: 2,
     slideWidth: 200,
     auto: true,
-    pause: 2000
+    pause: 3000,
+    speed: 1000
   });
 
   /**
@@ -42,5 +44,5 @@ $(document).ready(function () {
         $('body').toggleClass('sepia');
     }, true);
   }
-  
+
 });
