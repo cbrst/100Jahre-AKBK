@@ -50,21 +50,18 @@ body {
 
 a.button,
 button {
-    background: @hellesgrau;
+    background: @hellgrau;
     border: none;
     color: @fg;
     display: inline-block;
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 2em;
     height: 2em;
     margin: 0;
     text-decoration: none;
+    transition: background-color 0.5s ease;
     padding: 0 1em 0 0;
-    text-decoration: none;
-    color: @fg;
-    .button--hell {
-        background: @hellgrau;
-    }
+
     &::before {
         background-size: 80%;
         content: '';
@@ -74,16 +71,25 @@ button {
         vertical-align: top;
         width: 2em;
     }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: @hellesgrau;
+    }
+
     &.button--no-icon {
         padding: 0 1em;
         &::before {
             display: none;
         }
     }
+
     &.button--download::before {
         background: @fg url('../img/icon-download.svg') center no-repeat;
         background-size: 35px 35px;
     }
+
     &.button--link::before {
         background: @fg url('../img/icon-arrow-weiss.svg') center no-repeat;
         background-size: 35px 35px;
