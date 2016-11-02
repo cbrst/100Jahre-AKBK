@@ -392,6 +392,39 @@ section {
     }
 }
 
+.section--text-video {
+  .vjs-big-play-button {
+    background-color: @rot;
+    border: none;
+    border-radius: .4em;
+    height: 1.9em;
+    left: 35%;
+    line-height: 1.9em;
+    top: 30%;
+  }
+
+  .vjs-slider {
+    color: @dunkelrot;
+
+    &:hover {
+      font-size: 25px;
+    }
+  }
+
+  .vjs-control-bar {
+    background-color: @weiss_transparent;
+    color: @fg;
+  }
+  .vjs-load-progress {
+    background-color: @blau;
+  }
+
+  .vjs-volume-level,
+  .vjs-play-progress {
+    background-color: @rot;
+  }
+}
+
 .section--hero-text-image {
     background: @grau url('../img/panorama.jpg') center no-repeat;
     background-size: cover;
@@ -479,6 +512,18 @@ footer {
     }
   }
 
+  .section--text-video {
+     .video-js {
+       height: 30rem;
+       margin-top: 20px;
+       width: 100%;
+     }
+
+     .vjs-big-play-button {
+         left: 40%;
+         top: 40%;
+     }
+  }
 
   .section--faecher {
     img {
@@ -491,6 +536,17 @@ footer {
 @media screen and (max-width: 452px) {
     .akbk-logo {
         display: none;
+    }
+
+    .section--text-video {
+       .video-js {
+         height: 20rem;
+       }
+
+       .vjs-big-play-button {
+           left: 30%;
+           top: 33%;
+       }
     }
 }
 
