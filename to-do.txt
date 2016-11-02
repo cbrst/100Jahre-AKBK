@@ -1,0 +1,41 @@
+Section--Slider-Header
+- Text auf Sie-Form umtexten
+
+Section--einladung
+-Bild der zwei Figuren einsetzen
+
+Section--Zitat
+- Zitattext tauschen
+- Bild des Schulleiter einsetzen
+
+Section Text/Video
+- Text umtexten
+- Video Imagefilm in webm umwandeln
+- Video Imagefilm einsetzen
+- Video Thumb erstellen
+
+Section Markenslider
+- restliche Markenlogos einsetzen (ggf. auch als JPG/PNG)
+- Slider Button einsetzen
+
+Setion Hero/Text/Image
+- Textausrichtung anpassen
+
+Section Fächer
+- Fächergrafik tauschen
+
+Section Bildmatrix
+- Bild tauschen
+
+Section Schullink
+- Hintergrundbild einfügen
+- Poligon Farbverlauf zuweisen
+
+Slider
+- Slide-Dauer verlängern
+
+Mobile-Styling
+- Schriftgröße optimieren
+
+Domain
+- redirect per .htacces von aks-schulinfo.de/100-jahre auf 100jahre.adolph-kolping-berufskolleg.info unter aks-schulinfo.de hinterlegen.
