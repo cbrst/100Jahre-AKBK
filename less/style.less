@@ -254,16 +254,27 @@ h2 {
             background: url('../img/icon-arrow-weiss.svg') center no-repeat;
         }
         .bx-prev {
-            transform: rotate(90deg);
+          margin-left: 0;
+          transform: rotate(90deg);
+          transition: margin-left 0.2s ease;
+
+          &:hover {
+            background-position: 0;
+            margin-left: 5px;
+          }
         }
         .bx-next {
-            transform: rotate(-90deg);
+          margin-right: 0;
+          transform: rotate(-90deg);
+          transition: margin-right 0.2s ease;
+
+          &:hover {
+            background-position: 0;
+            margin-right: 5px;
+          }
         }
     }
-    .bx-next:hover,
-    .bx-prev:hover {
-        background-position: 0;
-    }
+
     .scroll-down {
         position: absolute;
         bottom: 80px;
