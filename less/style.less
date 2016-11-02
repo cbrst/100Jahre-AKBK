@@ -336,9 +336,18 @@ section {
     img {
         display: block;
         height: 70px;
-        margin: 0 auto 20px auto;
+        margin: 40px auto 20px auto;
         width: auto;
     }
+}
+
+.section--einladung {
+  img {
+      height: auto;
+      position: relative;
+      top: -100px;
+      width: 100%;
+  }
 }
 
 .section--hero-image {
@@ -378,6 +387,7 @@ section {
         font-family: "PT Serif", Georgia, serif;
         font-size: 40px;
         font-weight: normal;
+        text-align: center;
         padding-top: 50px;
     }
 }
@@ -388,7 +398,25 @@ section {
     min-height: 550px;
     p {
         color: @weiss;
+        font-family: "PT Serif", Georgia, serif;
+        font-size: 30px;
+        font-weight: normal;
+        text-align: center;
+        padding-top: 50px;
     }
+}
+
+.section--faecher {
+  img {
+      height: auto;
+      position: relative;
+      top: -60px;
+      width: 100%;
+  }
+
+  ul {
+    list-style-type: square;
+  }
 }
 
 .section--bildmatrix {
@@ -403,9 +431,10 @@ section {
 
 .section--schullink {
   background-image: linear-gradient(to right, @weiss 0%, @grau 100%);
-    
+
   .logo {
-    margin: 20px 0; 
+    margin: 20px 0;
+    max-width: 400px;
   }
 }
 
@@ -436,12 +465,27 @@ footer {
 }
 
 @media screen and (max-width: 974px) {
-    .section--quote {
-        img {
-            margin-bottom: 20px;
-            top: 10px;
-        }
+  .section--einladung {
+    img {
+      margin-bottom: 20px;
+        top: 10px;
     }
+  }
+
+  .section--quote {
+    img {
+      margin-bottom: 20px;
+      top: 10px;
+    }
+  }
+
+
+  .section--faecher {
+    img {
+      margin-bottom: 20px;
+      top: 10px;
+    }
+  }
 }
 
 @media screen and (max-width: 452px) {
