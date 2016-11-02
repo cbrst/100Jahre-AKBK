@@ -321,6 +321,9 @@ section {
     &.fg-weiss polygon {
         fill: @weiss;
     }
+    &.fg-weiss-grau polygon {
+      fill: url(#grau-verlauf);
+    }
 }
 
 .divider-bottom {
@@ -396,6 +399,14 @@ section {
         height: auto;
         width: 100%;
     }
+}
+
+.section--schullink {
+  background-image: linear-gradient(to right, @weiss 0%, @grau 100%);
+    
+  .logo {
+    margin: 20px 0; 
+  }
 }
 
 
