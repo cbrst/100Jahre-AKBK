@@ -441,6 +441,39 @@ section {
   }
 }
 
+.section--bx-slider {
+  .bx-controls {
+      //position: relative;
+      //top: -10vh;
+    a {
+      background: @grau url('../img/icon-arrow-right.svg') center no-repeat;
+      background-size: 70%;
+    }
+
+      .bx-prev {
+       background-image: url('../img/icon-arrow-bottom.svg');
+       background-position: 5px;
+       transform: rotate(90deg);
+       margin-left: 0;
+       transition: margin-left 0.2s ease;
+
+       &:hover {
+         margin-left: 5px;
+       }
+    }
+    .bx-next {
+      background-image: url('../img/icon-arrow-right.svg');
+      background-position: 5px;
+      margin-right: 0;
+      transition: margin-right 0.2s ease;
+
+      &:hover {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
 .section--hero-text-image {
     background: @grau url('../img/panorama.jpg') center no-repeat;
     background-size: cover;
