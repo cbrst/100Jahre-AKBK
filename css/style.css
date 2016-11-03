@@ -1,31 +1,65 @@
 /*---| Variablen |---*/
 /*---| Global |---*/
 body {
-  color: #666666;
+  color: #666;
   font: 18px/1.4 Lato, Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
 }
+.sepia {
+  filter: url(../img/sepia.svg#sepia);
+  /* Firefox 3.5+ */
+  filter: sepia(100%);
+  -webkit-filter: sepia(100%);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+blockquote {
+  margin: 0;
+  font-size: 1.2em;
+}
+#animation-sepia-haus {
+  animation-name: sepia-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes sepia-animation {
+  0% {
+    filter: none;
+  }
+  50% {
+    filter: url(../img/sepia.svg#sepia);
+    /* Firefox 3.5+ */
+    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
+    /* Google Chrome, Safari 6+ & Opera 15+ */
+  }
+  100% {
+    filter: none;
+  }
+}
 /*---| Utilities |---*/
-.clear:after {
+.clear::after {
   content: '';
   display: table;
   width: 100%;
   clear: both;
 }
+a.button,
 button {
-  background: #d9d2d0;
+  background: #ececec;
   border: none;
+  color: #666;
   display: inline-block;
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 2em;
   height: 2em;
   margin: 0;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
   padding: 0 1em 0 0;
 }
-button .button--hell {
-  background: #ececec;
-}
-button:before {
+a.button::before,
+button::before {
   background-size: 80%;
   content: '';
   display: inline-block;
@@ -34,16 +68,64 @@ button:before {
   vertical-align: top;
   width: 2em;
 }
-button.button--download:before {
-  background: #666666 url('../img/scroll-down_gray.svg') center no-repeat;
+a.button:hover,
+button:hover,
+a.button:active,
+button:active,
+a.button:focus,
+button:focus {
+  background: #d9d2d0;
 }
-button.button--link:before {
-  background: #666666 url('../img/icon-link.svg') center no-repeat;
+a.button.button--no-icon,
+button.button--no-icon {
+  padding: 0 1em;
+}
+a.button.button--no-icon::before,
+button.button--no-icon::before {
+  display: none;
+}
+a.button.button--download::before,
+button.button--download::before {
+  background: #666 url('../img/icon-download.svg') center no-repeat;
+  background-size: 35px 35px;
+}
+a.button.button--link::before,
+button.button--link::before {
+  background: #666 url('../img/icon-arrow-bottom.svg') center no-repeat;
+  background-size: 35px 35px;
+  transform: rotate(-90deg);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #444;
+  font-family: "PT Serif", Georgia, serif;
+  font-weight: normal;
+}
+h1,
+h2 {
+  color: #ffffff;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 15px 20px;
+  position: relative;
+}
+h1 {
+  top: 5%;
+}
+h2 {
+  top: 5%;
+}
+h3 {
+  font-size: 1.4em;
 }
 /*---| Header |---*/
 .farbband {
   float: left;
-  height: 25px;
+  height: 16px;
   width: 10%;
 }
 .dunkelrot {
@@ -85,29 +167,42 @@ button.button--link:before {
 .weiss {
   background-color: #ffffff;
 }
+.color--weiss {
+  color: #ffffff;
+}
 .navbar {
-  height: 60px;
+  height: 90px;
+  float: left;
 }
 .navbar img {
   height: 40px;
   margin-right: 10px;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 /*---| Slider |---*/
+.bx-wrapper .bx-viewport {
+  border: none;
+  box-shadow: none;
+}
 .title-screen {
-  height: calc(100vh - 85px);
+  height: calc(100vh - 60px);
   padding: 0;
 }
 .title-screen .bx-viewport,
 .title-screen .bx-wrapper {
-  border: none;
   width: 100%;
   height: 100% !important;
-  box-shadow: none;
+  left: 0;
 }
 .title-screen .slider-main {
   height: 100%;
   margin: 0;
+}
+.title-screen .slider-main h1 {
+  margin: -2em 0 0;
+}
+.title-screen .slider-main h2 {
+  margin: 0 0 3em;
 }
 .title-screen .slider-main li {
   height: 100% !important;
@@ -115,7 +210,20 @@ button.button--link:before {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  background-image: url('http://placehold.it/1920x1080');
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.title-screen .slider-main li#slide01 {
+  background-image: url('../img/titel-1.jpg');
+}
+.title-screen .slider-main li#slide02 {
+  background-image: url('../img/titel-2.jpg');
+}
+.title-screen .slider-main li#slide03 {
+  background-image: url('../img/titel-3.jpg');
 }
 .title-screen + .divider {
   position: relative;
@@ -125,13 +233,34 @@ button.button--link:before {
   top: -50vh;
 }
 .title-screen .bx-controls a {
-  background: url('../img/scroll-down_gray.svg') center no-repeat;
+  background: url('../img/icon-arrow-bottom.svg') center no-repeat;
 }
 .title-screen .bx-controls .bx-prev {
+  margin-left: 0;
   transform: rotate(90deg);
+  transition: margin-left 0.2s ease;
+}
+.title-screen .bx-controls .bx-prev:hover {
+  background-position: 0;
+  margin-left: 5px;
 }
 .title-screen .bx-controls .bx-next {
+  margin-right: 0;
   transform: rotate(-90deg);
+  transition: margin-right 0.2s ease;
+}
+.title-screen .bx-controls .bx-next:hover {
+  background-position: 0;
+  margin-right: 5px;
+}
+.title-screen .scroll-down {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  animation: fullwidth-header-bounce 2.2s ease-out infinite;
+}
+.title-screen .scroll-down img {
+  width: 55px;
 }
 /*---| Main |---*/
 section {
@@ -188,33 +317,168 @@ section {
   margin-bottom: -50px;
 }
 .section--icon-bar {
+  font-size: 1.2em;
   text-align: center;
 }
 .section--icon-bar img {
   display: block;
   height: 70px;
-  margin: 0 auto 20px auto;
+  margin: 40px auto 20px auto;
   width: auto;
+}
+.section--einladung img {
+  height: auto;
+  position: relative;
+  top: -100px;
+  width: 100%;
 }
 .section--hero-image {
   background: #9a9997 url('../img/hero.jpg') center no-repeat;
   background-size: cover;
   min-height: 350px;
 }
+.section--quote {
+  padding-bottom: 0;
+}
+.section--quote p {
+  background: #ececec url('../img/icon-quotes.svg') left top no-repeat;
+  background-size: 50px;
+  padding-left: 70px;
+  padding-top: 20px;
+}
+.section--quote p span {
+  display: block;
+  margin-top: 15px;
+  text-align: right;
+}
+.section--quote p span::before,
+.section--quote p span::after {
+  content: " ~ ";
+}
+.section--quote img {
+  height: auto;
+  position: relative;
+  top: -100px;
+  width: 100%;
+}
+.section--konami {
+  padding-bottom: 0 !important;
+}
+.section--konami img {
+  height: auto;
+  position: relative;
+  top: -100px;
+  width: 100%;
+}
+.section--text-line {
+  padding: 0 !important;
+}
+.section--text-line p {
+  font-family: "PT Serif", Georgia, serif;
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 50px;
+}
+.section--text-video .vjs-big-play-button {
+  background-color: #dd0420;
+  border: none;
+  border-radius: .4em;
+  height: 1.9em;
+  left: 35%;
+  line-height: 1.9em;
+  top: 30%;
+}
+.section--text-video .vjs-slider {
+  color: #8b2738;
+}
+.section--text-video .vjs-slider:hover {
+  font-size: 25px;
+}
+.section--text-video .vjs-control-bar {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #666;
+}
+.section--text-video .vjs-load-progress {
+  background-color: #006eb7;
+}
+.section--text-video .vjs-volume-level,
+.section--text-video .vjs-play-progress {
+  background-color: #dd0420;
+}
+.section--bx-slider .bx-controls a {
+  background: #9a9997 url('../img/icon-arrow-right.svg') center no-repeat;
+  background-size: 70%;
+  border: 5px solid #ffffff;
+}
+.section--bx-slider .bx-controls .bx-prev {
+  background-image: url('../img/icon-arrow-bottom.svg');
+  background-position: 5px;
+  transform: rotate(90deg);
+  margin-left: 0;
+  transition: margin-left 0.2s ease;
+}
+.section--bx-slider .bx-controls .bx-prev:hover {
+  margin-left: 5px;
+}
+.section--bx-slider .bx-controls .bx-next {
+  background-image: url('../img/icon-arrow-right.svg');
+  background-position: 5px;
+  margin-right: 0;
+  transition: margin-right 0.2s ease;
+}
+.section--bx-slider .bx-controls .bx-next:hover {
+  margin-right: 5px;
+}
 .section--hero-text-image {
   background: #9a9997 url('../img/panorama.jpg') center no-repeat;
   background-size: cover;
   min-height: 550px;
 }
-.hero-text	{
-	color:#ffffff;
+.section--hero-text-image p {
+  color: #ffffff;
+  font-family: "PT Serif", Georgia, serif;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 50px;
+}
+.section--faecher img {
+  height: auto;
+  position: relative;
+  top: -60px;
+  width: 100%;
+}
+.section--faecher ul {
+  list-style-type: square;
+}
+.section--bildmatrix {
+  position: relative;
+  padding: 0;
+  z-index: -1;
+}
+.section--bildmatrix img {
+  height: auto;
+  width: 100%;
+}
+.section--schullink {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #9a9997 100%), url('../img/schloss_menschen.jpg');
+  background-color: #ececec;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  color: #ffffff;
+}
+.section--schullink .logo {
+  margin: 20px 0;
+  max-width: 300px;
 }
 /*---| Footer |---*/
 footer {
   line-height: 3em;
 }
-footer a:not(:active):not(:hover) {
-  color: #666666;
+footer a:not(: active):not(: hover) {
+  color: #666;
 }
 footer span,
 footer nav,
@@ -231,4 +495,74 @@ footer ul {
 }
 footer li + li {
   margin-left: 1em;
+}
+.namen {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+}
+@media screen and (max-width: 974px) {
+  .section--einladung img {
+    margin-bottom: 20px;
+    top: 10px;
+  }
+  .section--quote {
+    padding-top: 20px;
+  }
+  .section--quote img {
+    margin-bottom: 80px;
+    top: 10px;
+  }
+  .section--konami img {
+    margin-bottom: 20px;
+    top: 0;
+  }
+  .section--text-video .video-js {
+    height: 30rem;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .section--text-video .vjs-big-play-button {
+    left: 40%;
+    top: 40%;
+  }
+  .section--faecher img {
+    margin-bottom: 20px;
+    top: 10px;
+  }
+  .namen {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 452px) {
+  .akbk-logo {
+    display: none;
+  }
+  .section--text-video .video-js {
+    height: 20rem;
+  }
+  .section--text-video .vjs-big-play-button {
+    left: 39%;
+    top: 40%;
+  }
+  .section--schullink {
+    background-position: top center;
+  }
+}
+@keyframes fullwidth-header-bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  12.5% {
+    transform: translateY(20%);
+  }
+  25% {
+    transform: translateY(0%);
+  }
+  37.5% {
+    transform: translateY(20%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
 }
