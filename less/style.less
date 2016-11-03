@@ -18,6 +18,7 @@
 @hellgrau: #ececec;
 @weiss: #ffffff;
 @weiss_transparent: rgba(255, 255, 255, .8);
+@grau-transparent: rgba(255, 255, 255, 0);
 @fg: #666;
 @fg_dunkel: #444;
 @divider_height: 50px;
@@ -517,6 +518,7 @@ section {
 }
 
 .section--schullink {
+<<<<<<< HEAD
     background-image: url('../img/schloss_menschen.jpg'), linear-gradient(to right, @weiss 0%, @grau 100%);
     background-color: @hellgrau;
     background-repeat: no-repeat;
@@ -526,6 +528,19 @@ section {
         margin: 20px 0;
         max-width: 400px;
     }
+=======
+  background-image: linear-gradient(to right, @grau-transparent 0%, @grau 100%), url('../img/schloss_menschen.jpg');
+  background-color: @hellgrau;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  color: @weiss;
+
+  .logo {
+    margin: 20px 0;
+    max-width: 300px;
+  }
+>>>>>>> 8ad1efc6aa5b546426393e15d867438cb1ee26c3
 }
 
 
@@ -590,6 +605,10 @@ footer {
     .akbk-logo {
         display: none;
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 8ad1efc6aa5b546426393e15d867438cb1ee26c3
     .section--text-video {
         .video-js {
             height: 20rem;
@@ -598,6 +617,10 @@ footer {
             left: 30%;
             top: 33%;
         }
+    }
+    
+    .section--schullink {
+      background-position: top center;
     }
 }
 
