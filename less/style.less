@@ -38,6 +38,29 @@ body {
     /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 
+#animation-sepia-haus {
+    animation-name: sepia-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes sepia-animation {
+    0% {
+        filter: none;
+    }
+    50% {
+        filter: url(../img/sepia.svg#sepia);
+        /* Firefox 3.5+ */
+        filter: sepia(100%);
+        -webkit-filter: sepia(100%);
+        /* Google Chrome, Safari 6+ & Opera 15+ */
+    }
+    100% {
+        filter: none;
+    }
+}
+
 
 /*---| Utilities |---*/
 
@@ -61,7 +84,6 @@ button {
     text-decoration: none;
     transition: background-color 0.5s ease;
     padding: 0 1em 0 0;
-
     &::before {
         background-size: 80%;
         content: '';
@@ -71,25 +93,21 @@ button {
         vertical-align: top;
         width: 2em;
     }
-
     &:hover,
     &:active,
     &:focus {
-      background: @hellesgrau;
+        background: @hellesgrau;
     }
-
     &.button--no-icon {
         padding: 0 1em;
         &::before {
             display: none;
         }
     }
-
     &.button--download::before {
         background: @fg url('../img/icon-download.svg') center no-repeat;
         background-size: 35px 35px;
     }
-
     &.button--link::before {
         background: @fg url('../img/icon-arrow-bottom.svg') center no-repeat;
         background-size: 35px 35px;
@@ -253,27 +271,24 @@ h2 {
             background: url('../img/icon-arrow-bottom.svg') center no-repeat;
         }
         .bx-prev {
-          margin-left: 0;
-          transform: rotate(90deg);
-          transition: margin-left 0.2s ease;
-
-          &:hover {
-            background-position: 0;
-            margin-left: 5px;
-          }
+            margin-left: 0;
+            transform: rotate(90deg);
+            transition: margin-left 0.2s ease;
+            &:hover {
+                background-position: 0;
+                margin-left: 5px;
+            }
         }
         .bx-next {
-          margin-right: 0;
-          transform: rotate(-90deg);
-          transition: margin-right 0.2s ease;
-
-          &:hover {
-            background-position: 0;
-            margin-right: 5px;
-          }
+            margin-right: 0;
+            transform: rotate(-90deg);
+            transition: margin-right 0.2s ease;
+            &:hover {
+                background-position: 0;
+                margin-right: 5px;
+            }
         }
     }
-
     .scroll-down {
         position: absolute;
         bottom: 80px;
@@ -355,12 +370,12 @@ section {
 }
 
 .section--einladung {
-  img {
-      height: auto;
-      position: relative;
-      top: -100px;
-      width: 100%;
-  }
+    img {
+        height: auto;
+        position: relative;
+        top: -100px;
+        width: 100%;
+    }
 }
 
 .section--hero-image {
@@ -406,70 +421,63 @@ section {
 }
 
 .section--text-video {
-  .vjs-big-play-button {
-    background-color: @rot;
-    border: none;
-    border-radius: .4em;
-    height: 1.9em;
-    left: 35%;
-    line-height: 1.9em;
-    top: 30%;
-  }
-
-  .vjs-slider {
-    color: @dunkelrot;
-
-    &:hover {
-      font-size: 25px;
+    .vjs-big-play-button {
+        background-color: @rot;
+        border: none;
+        border-radius: .4em;
+        height: 1.9em;
+        left: 35%;
+        line-height: 1.9em;
+        top: 30%;
     }
-  }
-
-  .vjs-control-bar {
-    background-color: @weiss_transparent;
-    color: @fg;
-  }
-  .vjs-load-progress {
-    background-color: @blau;
-  }
-
-  .vjs-volume-level,
-  .vjs-play-progress {
-    background-color: @rot;
-  }
+    .vjs-slider {
+        color: @dunkelrot;
+        &:hover {
+            font-size: 25px;
+        }
+    }
+    .vjs-control-bar {
+        background-color: @weiss_transparent;
+        color: @fg;
+    }
+    .vjs-load-progress {
+        background-color: @blau;
+    }
+    .vjs-volume-level,
+    .vjs-play-progress {
+        background-color: @rot;
+    }
 }
 
 .section--bx-slider {
-  .bx-controls {
-      //position: relative;
-      //top: -10vh;
-    a {
-      background: @grau url('../img/icon-arrow-right.svg') center no-repeat;
-      background-size: 70%;
-      border: 5px solid @weiss;
+    .bx-controls {
+        //position: relative;
+        //top: -10vh;
+        a {
+            background: @grau url('../img/icon-arrow-right.svg') center no-repeat;
+            background-size: 70%;
+            border: 5px solid @weiss;
+        }
+        .bx-prev {
+            background-image: url('../img/icon-arrow-bottom.svg');
+            background-position: 5px;
+            transform: rotate(90deg);
+            margin-left: 0;
+            transition: margin-left 0.2s ease;
+            &:hover {
+                margin-left: 5px;
+            }
+        }
+        .bx-next {
+            background-image: url('../img/icon-arrow-right.svg');
+            background-position: 5px;
+            margin-right: 0;
+            transition: margin-right 0.2s ease;
+            &:hover {
+                margin-right: 5px;
+            }
+        }
     }
-
-      .bx-prev {
-       background-image: url('../img/icon-arrow-bottom.svg');
-       background-position: 5px;
-       transform: rotate(90deg);
-       margin-left: 0;
-       transition: margin-left 0.2s ease;
-
-       &:hover {
-         margin-left: 5px;
-       }
-    }
-    .bx-next {
-      background-image: url('../img/icon-arrow-right.svg');
-      background-position: 5px;
-      margin-right: 0;
-      transition: margin-right 0.2s ease;
-
-      &:hover {
-        margin-right: 5px;
-      }
-    }
-  }
 }
 
 .section--hero-text-image {
@@ -487,16 +495,15 @@ section {
 }
 
 .section--faecher {
-  img {
-      height: auto;
-      position: relative;
-      top: -60px;
-      width: 100%;
-  }
-
-  ul {
-    list-style-type: square;
-  }
+    img {
+        height: auto;
+        position: relative;
+        top: -60px;
+        width: 100%;
+    }
+    ul {
+        list-style-type: square;
+    }
 }
 
 .section--bildmatrix {
@@ -510,16 +517,15 @@ section {
 }
 
 .section--schullink {
-  background-image: url('../img/schloss_menschen.jpg'), linear-gradient(to right, @weiss 0%, @grau 100%);
-  background-color: @hellgrau;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top left;
-
-  .logo {
-    margin: 20px 0;
-    max-width: 400px;
-  }
+    background-image: url('../img/schloss_menschen.jpg'), linear-gradient(to right, @weiss 0%, @grau 100%);
+    background-color: @hellgrau;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+    .logo {
+        margin: 20px 0;
+        max-width: 400px;
+    }
 }
 
 
@@ -549,55 +555,49 @@ footer {
 }
 
 @media screen and (max-width: 974px) {
-  .section--einladung {
-    img {
-      margin-bottom: 20px;
-        top: 10px;
+    .section--einladung {
+        img {
+            margin-bottom: 20px;
+            top: 10px;
+        }
     }
-  }
-
-  .section--quote {
-    img {
-      margin-bottom: 20px;
-      top: 10px;
+    .section--quote {
+        img {
+            margin-bottom: 20px;
+            top: 10px;
+        }
     }
-  }
-
-  .section--text-video {
-     .video-js {
-       height: 30rem;
-       margin-top: 20px;
-       width: 100%;
-     }
-
-     .vjs-big-play-button {
-         left: 40%;
-         top: 40%;
-     }
-  }
-
-  .section--faecher {
-    img {
-      margin-bottom: 20px;
-      top: 10px;
+    .section--text-video {
+        .video-js {
+            height: 30rem;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .vjs-big-play-button {
+            left: 40%;
+            top: 40%;
+        }
     }
-  }
+    .section--faecher {
+        img {
+            margin-bottom: 20px;
+            top: 10px;
+        }
+    }
 }
 
 @media screen and (max-width: 452px) {
     .akbk-logo {
         display: none;
     }
-
     .section--text-video {
-       .video-js {
-         height: 20rem;
-       }
-
-       .vjs-big-play-button {
-           left: 30%;
-           top: 33%;
-       }
+        .video-js {
+            height: 20rem;
+        }
+        .vjs-big-play-button {
+            left: 30%;
+            top: 33%;
+        }
     }
 }
 
