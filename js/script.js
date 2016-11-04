@@ -4,7 +4,8 @@ $(document).ready(function () {
     auto: true,
     nextText: '',
     prevText: '',
-    speed: 1500
+		speed: 1500,
+		touchEnabled: false
   });
   $('.slider-partner').bxSlider({
     pager: false,

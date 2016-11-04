@@ -57,6 +57,7 @@ button {
   text-decoration: none;
   transition: background-color 0.5s ease;
   padding: 0 1em 0 0;
+  white-space: nowrap;
 }
 a.button::before,
 button::before {
@@ -256,7 +257,7 @@ h3 {
 .title-screen .scroll-down {
   position: absolute;
   bottom: 80px;
-  left: 50%;
+  left: calc(50% - 22px);
   animation: fullwidth-header-bounce 2.2s ease-out infinite;
 }
 .title-screen .scroll-down img {
@@ -385,9 +386,9 @@ section {
   border: none;
   border-radius: .4em;
   height: 1.9em;
-  left: 35%;
+  left: 40%;
   line-height: 1.9em;
-  top: 30%;
+  top: 40%;
 }
 .section--text-video .vjs-slider {
   color: #8b2738;
@@ -535,6 +536,13 @@ footer li + li {
   }
 }
 @media screen and (max-width: 452px) {
+  a.button,
+  button {
+    font-size: 0.8em;
+  }
+  .section--bildmatrix {
+    display: none;
+  }
   .akbk-logo {
     display: none;
   }

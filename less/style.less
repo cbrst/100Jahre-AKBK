@@ -1,5 +1,5 @@
-// out: ../css/style.css, compress: false, strictMath: true
 // -*- less-css-compile-at-save: t; less-css-output-directory: "../css" -*-
+// out: ../css/style.css, compress: false, strictMath: true
 
 /*---| Variablen |---*/
 
@@ -89,7 +89,8 @@ button {
     margin: 0;
     text-decoration: none;
     transition: background-color 0.5s ease;
-    padding: 0 1em 0 0;
+		padding: 0 1em 0 0;
+		white-space: nowrap;
     &::before {
         background-size: 80%;
         content: '';
@@ -309,7 +310,7 @@ h3 {
     .scroll-down {
         position: absolute;
         bottom: 80px;
-        left: 50%;
+				left: calc(~"50% - 22px");
         animation: fullwidth-header-bounce 2.2s ease-out infinite;
         img {
             width: 55px;
@@ -637,6 +638,13 @@ footer {
 }
 
 @media screen and (max-width: 452px) {
+	a.button,
+	button {
+		font-size: 0.8em;
+	}
+	.section--bildmatrix {
+		display: none;
+	}
     .akbk-logo {
         display: none;
     }
